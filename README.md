@@ -1,23 +1,22 @@
-# EDIpack2.0: Massively parallel Exact Diagonalization for generic Quantum Impurity problems
+# `⚠rchived` 
+> The development of EDIpack has moved [elsewhere](https://github.com/EDIpack), so this repository is now archived: it will not be updated (you cannot push, we will not sync with the new upstream) nor deleted, to preserve any possible links (git remotes in local clones, git submodules, etc.) to break.
+-----
 
-[![TestSuite](https://img.shields.io/github/actions/workflow/status/QcmPlab/EDIpack2.0/PushWorkflow.yml?label=TestSuite&logo=Fortran&style=flat-square)](https://github.com/QcmPlab/EDIpack2/actions/workflows/PushWorkflow.yml) 
 
-<!-- TO BE SETUP ASAP
-[![Coverage]()]()
-[![api docs](https://img.shields.io/static/v1?label=API&message=documentation&color=734f96&logo=read-the-docs&logoColor=white&style=flat-square)](https://qcmplab.github.io/DMFT_ED)
--->
-A suitable extension of [EDIpack](https://arxiv.org/abs/2105.06806): a  Lanczos based method 
-for the solution of generic Quantum Impurity problems,  exploiting distributed memory MPI parallelization.
-This updated version, aims to solve single-site, multi-orbital models, in either  *normal*, *superconducting* (s-wave) or *Spin-non-conserving* (e.g. with Spin-Orbit Coupling or in-plane magnetization) phases, including electron-phonons coupling. The code works at zero and low temperatures.   
+# EDIpack2.0: massively parallel exact diagonalization for generic quantum impurity problems
+
+An extension of [EDIpack](https://arxiv.org/abs/2105.06806): a Lanczos-based method 
+for the solution of generic quantum impurity problems, exploiting distributed memory MPI parallelization.
+This updated version, aims to solve single-site, multi-orbital models, in either  *normal*, *superconducting* (s-wave) or *spin-non-conserving* (e.g. with spin-orbit coupling or in-plane magnetization) phases, including electron-phonons coupling. The code works at zero and low temperatures.   
  
-See [j.cpc.2021.108261](https://doi.org/10.1016/j.cpc.2021.108261) for further information about the underlying algorithms. Yet, suitable modifications have been developed to address the Superconducting and non-SU(2) channels.  
+See [j.cpc.2021.108261](https://doi.org/10.1016/j.cpc.2021.108261) for further information about the original massively parallel algorithm. See [SciPost Phys. Codebases 58](https://scipost.org/10.21468/SciPostPhysCodeb.58) for the newer updates, addressing the superconducting and non-SU(2) extensions.  
 
 
 ### Dependencies
 
 The code is based on:  
 
-* SciFortran [https://github.com/QcmPlab/SciFortran](https://github.com/QcmPlab/SciFortran)  
+* [SciFortran](https://github.com/QcmPlab/SciFortran)  
 
 * MPI 
 
